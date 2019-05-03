@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lohith Portfolio</title>
+  <meta charset="utf-8">\
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"> </script>
+  <style>
+  html, body {
+  height: 100%;
+  margin: 0;
+}
+body
+      {
+          position: ra;
+      }
+</style>
+<style>
+.arrow{
+  position: relative;
+  font-size:50px;
+  text-align:center;
+  animation: bouncearrow 1s infinite;
+
+}
+@keyframes bouncearrow{
+    0%{bottom: 0px;}
+    50%{bottom: 20px; color: #000000;}
+    100%{bottom: 0px;}
+}
+ .rotate-icon
+          {
+              transition: transform 0.3s ease-out;
+          }
+          .rotate-link:hover .rotate-icon
+          {
+              transform: rotateY(360deg)
+          }
+
+            .btn
+          {
+               background: #00CED1;
+              color: #000000;
+              width:85px;
+              height: 35px;
+              border: 1px solid #A9A9A9;
+              font-size: 16px;
+              border-radius: 4px;
+              transition: .6s;
+              overflow: hidden;
+          }
+
+          .container-fluid
+          {
+            height:100vh;
+          }
+          
+            @media only screen and (max-width: 480px) { 
+            
+            [class*="col-"] {
+              width: 100%;
+            }
+            .container-fluid
+              {
+                  height: auto;
+              }
+             }
+          
+            @media only screen and (min-width: 600px) {
+              /* For tablets: */
+              .col-sm-1 {width: 8.33%;}
+              .col-sm-2 {width: 16.66%;}
+              .col-sm-3 {width: 25%;}
+              .col-sm-4 {width: 33.33%;}
+              .col-sm-5 {width: 41.66%;}
+              .col-sm-6 {width: 50%;}
+              .col-sm-7 {width: 58.33%;}
+              .col-sm-8 {width: 66.66%;}
+              .col-sm-9 {width: 75%;}
+              .col-sm-10 {width: 83.33%;}
+              .col-sm-11 {width: 91.66%;}
+              .col-sm-12 {width: 100%;}
+            }
+            @media only screen and (min-width: 768px) {
+              /* For desktop: */
+              .col-md-1 {width: 8.33%;}
+              .col-md-2 {width: 16.66%;}
+              .col-md-3 {width: 25%;}
+              .col-md-4 {width: 33.33%;}
+              .col-md-5 {width: 41.66%;}
+              .col-md-6 {width: 50%;}
+              .col-md-7 {width: 58.33%;}
+              .col-md-8 {width: 66.66%;}
+              .col-md-9 {width: 75%;}
+              .col-md-10 {width: 83.33%;}
+              .col-md-11 {width: 91.66%;}
+              .col-md-12 {width: 100%;}
+            }
+            img {
+              max-width: 100%;
+              height: auto;
+            }
+            #section1
+          {
+            
+              background: #232741;
+              color: white;
+          }
+          #section2
+          {
+              background: #DAD4D4;
+          }
+          #section3
+          {
+              background:  #232741;
+          }
+          #section4
+          {
+              background: #DAD4D4;
+          }
+          #section5
+          {
+              background: #232741;
+          }
+
+</style>
+
+ 
+ 
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<script type="text/javascript" src="particles.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Intro</a></li>
+          <li><a href="#section2">Education</a></li>
+          <li><a href="#section3">Projects</a></li>
+          <li><a href="#section4">Skills</a></li>
+          <li><a href="#section5">Contact</a></li>
+          <li><a href="resume.html" target="_blank">Resume</a></li>
+        </ul>
+        
+      </div>
+    </div>
+</nav> 
+
+<div class="welcome-section content-hidden">
+<div class="content-wrap">
+<ul class="fly-in-text">
+<li>W</li>
+<li>E</li>
+<li>L</li>
+<li>C</li>
+<li>O</li>
+<li>M</li>
+<li>E</li>
+
+</ul>
+<a href="#" class="enter-button">TAP</a>
+</div>
+</div>
+<script type="text/javascript">
+$(function(){
+  var welcomeSection=$('.welcome-section'),
+      enterButton = welcomeSection.find('.enter-button');
+
+      setTimeout(function() {
+        welcomeSection.removeClass('content-hidden');
+      },800);
+
+      enterButton.on('click',function(e){
+        e.preventDefault();
+        welcomeSection.addClass('content-hidden').fadeOut();
+      });
+});
+</script>
+<div id="particles-js">
+  <div id="section1" class="container-fluid"> 
+   
+   <br><br>      <center><img src="lohith.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236" >  
+            
+            <h4><p>Hello!</p></h4>
+              <h1>print(' I am Lohith Desu ');</h1>
+             <br><br> <p style="font-family:courier;">Computer Science Undergraduate at NIIT University. Specialised in Data Science. <br>Got my hands on a computer for the first time on 14th July 2016.<br> Ever since my journey with programming has been started. Initially I started out with C but never restricted myself to it.<br> Algorithms and machine learning brought the coder out of me which became building blocks for my problem solving skills.<br> Excluding my academia I have been involved in projects. I like to mess around with stuff such as python and others.</p><br><br> </center>
+              <br><br><div  id="arrow1" class="col-md-12 col-sm-12 col-12" >
+                <div class="arrow">&#8609;</div>  
+              </div>
+             
+</div>           
+</div>
+
+
+
+
+<div id="section2" class="container-fluid">
+   <br><br><br>
+<div class="row">
+        <div class="col-md-12 col-sm-12 col-12"><font color="Black"><h2>Education</h2></font></div>
+    </div>
+  
+  <br><br><br>
+  <div class="row">
+        <div class="col-md-4 col-sm-4 col-12" align="center">
+            <img src="btech boy.png" class="rounded-circle img-fluid" alt="Cinque Terre">
+       <br>
+      <div style="background-color:#232741;" align="center"><br><br><font color="white"><b>Bachelor of Technology</b><br>NIIT UNIVERSITY<br>Batch 2016-2020<br>Neemrana, Rajasthan<br>Current CGPA: 8.05</font><br><br><br></div>
+            
+      </div>
+        <div class="col-md-4 col-sm-4 col-12" align="center"><img src="interediate boy.png" class="rounded-circle img-fluid" alt="Cinque Terre">
+             <br>
+      <div  style="background-color:#232741;" align="center"><br><br><font color="white"><b>Secondary Education in MPC</b><br>Narayana Junior College<br>Batch 2014-2016<br>Vijayawada, Andhra Pradesh<br>Percentage: 97.2%</font><br><br><br></div>
+      
+      
+      </div>
+        <div class="col-md-4 col-sm-4 col-12" align="center"><img src="schoolboy.png" class="rounded-circle img-fluid" alt="Cinque Terre">
+             <br>
+      <div  style="background-color:#232741;"><br><br><font color="white"><b>Higher Education</b><br>Ravindra Bharathi Public School<br>Batch 2013-2014<br>Vijayawada, Andhra Pradesh<br>CGPA: 9.0</font><br><br><br></div>
+      
+      
+      </div>
+    </div>
+
+</div>
+
+
+
+<div id="section3" class="container-fluid">
+     <br><br><br>
+<div class="row">
+        <div class="col-md-12 col-sm-12 col-12"><font color="white"><h2>Projects</h2></font></div>
+    </div> 
+     <div class="row">
+        <div class="col-md-12 col-sm-12 col-12" align="center"><img src="projects.png" width="170" height="163" class="rounded-circle img-fluid" alt="Cinque Terre"></div>
+    </div>
+    <br><br>
+<div class="row">
+      <div id="pro" class="col-md-6 col-sm-6 col-12" >
+          
+              
+          <h4><font color="white">Khana! [2017-2018]</font></h4>
+         <font color="white"> Android application<br><br>
+          Khana is basically a food delivery app made for local restaurant Aapno Gaon that is present in the NIIT UNIVERSITY and stay updated about the status of the order.</font><br><a href="https://github.com/thisislohith6/Khanna-server" target="_blank" class="btn" role="button">View</a>
+                
+      </div>
+      <div id="pro" class="col-md-6 col-sm-6 col-12">
+          <font color="white">
+            <h4>Catero [2018-2019]</h4>
+            Web Application<br><br>
+           Catero is a catering management system in which we will add a tasty, well-organized menu on our website and enable customers to pre-order your exquisite meals and drinks online.</font><br><a href="https://github.com/Software-Engineering-2018/Catero" class="btn" target="_blank" role="button">View</a>
+          </div>
+      </div>
+  
+</div>
+
+
+<div id="section4" class="container-fluid">
+      <br><br><br>
+<div class="row">
+        <div class="col-md-12 col-sm-12 col-12"><font color="Black"><h2>Skills</h2></font></div>
+    </div> 
+  <div class="container-fluid">
+  <br><br><br>
+  <div class="row">
+    <div class="col-md-3 col-sm-3 col-12"><center><img src="C:\Users\Desu.Lohith\Desktop\html\datascience.png" width="150" height="155" class="rounded img-fluid" alt="Cinque Terre">
+       
+        <div style="background-color:#DAD4D4;"><br><font color="black"><h3>Data Analysis</h3><br>Inputs raw data and outputs the analysis by re-organizing and modelling with a keen focus on Business Intelligence </font></div>
+        </center>
+         </div>
+    <div class="col-md-3 col-sm-3 col-12"><center><img src="C:\Users\Desu.Lohith\Desktop\html\bigdata.png" width="150" height="155" class="rounded img-fluid" alt="Cinque Terre"> 
+         <br>
+        <div style="background-color:#DAD4D4;"><br><font color="black"><H3>Big Data Applications</H3><br>Love to explore its limits; Solve data problems with minimal complexity. Always ready to taste new. </font></div>
+        
+        </center></div>
+    <div class="col-md-3 col-sm-3 col-12"><center><img src="C:\Users\Desu.Lohith\Desktop\html\web.png" width="150" height="155" class="rounded img-fluid" alt="Cinque Terre">
+         <br>
+        <div style="background-color:#DAD4D4;"><br><font color="black"><H3>Coding</H3><br>C, Python, Data Structures, MYSQL, Java, Advance Java, Web Development (HTML, CSS, JS)</font></div>
+        
+        
+        </center></div>
+    <div class="col-md-3 col-sm-3 col-12"><center><img src="C:\Users\Desu.Lohith\Desktop\html\travel.png" width="150" height="155" class="rounded img-fluid" alt="Cinque Terre">
+         <br>
+         <div  style="background-color:#DAD4D4;"><br><font color="black"><h3>Travel</h3><br>Interests + Passion = Love;<br>Expeditions round the globe boosts me up</font></div>
+                  
+        
+        </center></div>
+
+  </div>
+  <br><br>
+
+</div>
+</div>
+
+
+<div id="section5" class="container-fluid">
+      <br><br><br>
+<div class="row">
+        <div class="col-md-12 col-sm-12 col-12"><font color="White"><h2>Contact</h2>  <h3>&emsp;&emsp;&ensp;Home Address</h3> </font></div>
+    </div>
+  <div class="row">
+      <div class="col-md-6 col-sm-6 col-6"><br><p><center><iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.6976627093786!2d80.60348041463648!3d16.541354231006228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35efbef57e97fd%3A0x9388dad0c5ed41b9!2sKabela+Road%2C+RR+Nagar%2C+Vijayawada%2C+Andhra+Pradesh+520012!5e0!3m2!1sen!2sin!4v1548569529965" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></p> </div>
+
+        <div class="col-md-6 col-sm-6 col-6"><p style="font-family:courier;"><font style="font-family:courier;" font color="White">
+           <br><h3>{SUGGESTIONS | HELP}</h3>
+            <br>Feel free to contact me!<br></font></p>
+             <br>
+             <div class="col-12">
+                <font size="4" style="font-family:courier;" font color="White"><i class="fa fa-mobile" style="font-size:39px"></i>&ensp; &nbsp;+91 9660960454 | 9502019057</font><br>
+             </div>
+             <br>
+             <div class="col-12">
+             <font size="4" style="font-family:courier;" font color="White"><i class="fa fa-envelope-o" style="font-size:36px"></i>&ensp; Desu.Lohith@st.niituniversity.in</font><br> 
+             </div>
+             <br>
+             <div class="col-12">
+             <font size="4" style="font-family:courier;" font color="White"><i class="fa fa-linkedin-square" style="font-size:36px"></i>&emsp;&ensp;Desu Lohith</font><br>
+              </div>
+             <br>
+             <div class="col-12">
+             <font size="4" style="font-family:courier;" font color="White"><i class="fa fa-home" style="font-size:36px"></i>&ensp; RR Nagar, Vijayawada, Andhra Pradesh, 520012 </font></div>
+
+            <div class="row">
+                      <div id="acc" class="col-md-12 col-sm-12 col-12" align="center">
+                          <a class="rotate-link" href="https://www.linkedin.com/in/desu-lohith-2469b2142/" target="_blank">
+                          <img src="linkedIn.png" class="rounded img-fluid  rotate-icon" alt="Cinque Terre"></a>
+                          <a class="rotate-link" href="https://www.facebook.com/lohith.desu" target="_blank">
+                          <img  src="fb1.png" class="rounded img-fluid rotate-icon" alt="Cinque Terre"></a>
+                          <a class="rotate-link" href="https://github.com/thisislohith6" target="_blank">
+                          <img src="github1.png" class="rounded img-fluid rotate-icon" alt="Cinque Terre"></a><br><br>
+
+                      </div>
+                    </div>
+          </div>
+    </div>
+</div>
+<script src="js/particles.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
+
